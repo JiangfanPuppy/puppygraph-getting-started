@@ -592,14 +592,14 @@ docker run -p 8081:8081 -p 8182:8182 -p 7687:7687 \
 -e DATABRICKS_TOKEN=<your_token> \
 -e DATABRICKS_S3_ACCESSKEY=<your_s3_accesskey> \
 -e DATABRICKS_S3_SECRETKEY=<your_s3_secretkey> \
---name puppy --rm -itd puppygraph/puppygraph:stable
+--name puppy --rm -itd puppygraph/puppygraph:latest
 ```
 2. Log into the PuppyGraph Web UI at http://localhost:8081 with the following credentials:
 - Username: `puppygraph`
 - Password: `puppygraph123`
 
 3. Upload the schema:
-- Select the file `schema_databricks.json` in the Upload Graph Schema JSON section and click on Upload.
+- Click **Upload Schema**, select the file `schema_databricks.json` and click **Upload**.
 
 1. Querying the Graph
 - Navigate to the Query panel on the left side. The **Graph Query** tab offers an interactive environment for querying the graph using Gremlin and openCypher.

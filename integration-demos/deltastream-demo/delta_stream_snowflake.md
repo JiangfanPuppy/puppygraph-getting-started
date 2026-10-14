@@ -570,14 +570,14 @@ docker run -p 8081:8081 -p 8182:8182 -p 7687:7687 \
 -e SNOW_USER=<your_snow_username> \
 -e SNOW_PWD=<your_snow_password> \
 -e SNOW_ACCOUNT_ID=<your_account_id> \
---name puppy --rm -itd puppygraph/puppygraph:stable
+--name puppy --rm -itd puppygraph/puppygraph:latest
 ```
 2. Log into the PuppyGraph Web UI at http://localhost:8081 with the following credentials:
 - Username: `puppygraph`
 - Password: `puppygraph123`
 
 3. Upload the schema:
-- Select the file `schema_snowflake.json` in the Upload Graph Schema JSON section and click on Upload.
+- Click **Upload Schema**, select the file `schema_snowflake.json` and click **Upload**.
 
 1. Querying the Graph
 - Navigate to the Query panel on the left side. The **Graph Query** tab offers an interactive environment for querying the graph using Gremlin and openCypher.
